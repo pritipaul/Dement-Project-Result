@@ -1,7 +1,6 @@
 streamlit
 st-gsheets-connection
 email_validator
-webbrowser
 scikit-learn
 scikit-image
 matplotlib
