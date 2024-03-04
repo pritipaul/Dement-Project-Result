@@ -59,11 +59,23 @@ def predict_dementia(features):
 # Streamlit app code
 def main():
     
-    st.title("Dementia Classifier")
-    st.write("Enter the patient's features and predict whether they are demented or non-demented.")
-    
-    # Email = st.text_input(label="Email*",value='pre_filled_email',disabled=True)
-    
+    st.image("./Logo.png", width=100)
+    # Set the app title and description
+    st.markdown("""<h1 style='text-align: center;'>Dementia Classifier using<br>MOD-1D-CNN</h1>""", unsafe_allow_html=True)
+    # st.title("Dementia Classifier using MOD-1D-CNN")
+    st.write("Enter the health metrics features and predict whether demented or non-demented.")
+    st.write("**Health Metrics Input Format:**")
+    bullet_points = [
+    "**Diabetic status (0 for absence or 1 for presence)**",
+    "**Age: 1(40-64) or 2(65-70) or 3(75-90)**",
+    "**Heart rate: 1(<60bpm) or 2(60bpm – 100bpm) or 3(>100bpm)**",
+    "**Blood oxygen level (1(<95%) or 2(95%-100%) or 3(>100%))**",
+    "**Body temperature: 1(<36.5oC) or 2(36.5oC – 37.5oC) or 3(>37.5oC)**",
+    "**Weight: 1(<50kg) or 2(50kg – 70kg) or 3(>70kg)**"
+     ]
+
+    st.write("- " + "\n- ".join(bullet_points))
+
     Diabetic = st.radio("Diabetic", [0, 1])
     Age_Class = st.radio("Age_Class", [1, 2, 3])
     HeartRate_Class = st.radio("HeartRate_Class", [1, 2, 3])
