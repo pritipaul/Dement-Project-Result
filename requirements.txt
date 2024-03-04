@@ -1,3 +1,7 @@
+streamlit
+st-gsheets-connection
+email_validator
+webbrowser
 scikit-learn
 scikit-image
 matplotlib
@@ -5,6 +9,3 @@ keras
 tensorflow
 pandas
 numpy
-st-gsheets-connection
-email_validator
-webbrowser
