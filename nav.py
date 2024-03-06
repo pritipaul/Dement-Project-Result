@@ -20,7 +20,7 @@ def make_sidebar():
         st.write("")
 
         if st.session_state.get("logged_in", False):
-            st.page_link("pages/app.py", label="Secret Company Stuff", icon="🔒")
+            st.page_link("pages/app.py", label="Dementia Prediction Page", icon="🔒")
             st.write("")
 
         elif get_current_page_name() != "Details":
