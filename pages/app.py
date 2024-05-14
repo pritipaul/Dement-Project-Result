@@ -113,8 +113,15 @@ def main():
 
         st.success("Health Metrics Details Successfully Submitted!")
         url = "https://www.youtube.com/watch?v=TsXR7_vtusQ"
-        if st.button("Go to Link"):
-            st.markdown(f'<a href="{url}" target="_blank">Go to Link</a>', unsafe_allow_html=True)
+        st.write(f'''
+            <a target="_self" href="https://www.youtube.com/watch?v=TsXR7_vtusQ">
+                <button>
+                    Please login via Google
+                </button>
+            </a>
+            ''',
+            unsafe_allow_html=True
+        )
 
 
 
