@@ -112,9 +112,8 @@ def main():
         conn.update(worksheet="Dementia", data=updated_df)
 
         st.success("Health Metrics Details Successfully Submitted!")
-        url = "https://www.youtube.com/watch?v=TsXR7_vtusQ"
         st.write(f'''
-            <a target="_self" href="https://www.youtube.com/watch?v=TsXR7_vtusQ">
+            <a target="_self" href="https://code2project2023.github.io/code2project2023/index.html">
                 <button>
                     Please login via Google
                 </button>
