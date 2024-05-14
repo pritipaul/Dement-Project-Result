@@ -7,7 +7,6 @@ from keras.models import Sequential
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from streamlit_gsheets import GSheetsConnection
 from nav import make_sidebar
-import webbrowser
 
 
 make_sidebar()
@@ -114,8 +113,8 @@ def main():
 
         st.success("Health Metrics Details Successfully Submitted!")
         url = "https://www.youtube.com/watch?v=TsXR7_vtusQ"
-        if st.button("Go to Link"):
-            webbrowser.open_new_tab(url)
+        st.markdown(f'<a href="{youtube_link}" target="_blank">Button</a>', unsafe_allow_html=True)
+
 
 
 
