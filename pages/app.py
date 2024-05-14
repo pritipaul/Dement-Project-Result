@@ -113,7 +113,7 @@ def main():
         conn.update(worksheet="Dementia", data=updated_df)
 
         st.success("Health Metrics Details Successfully Submitted!")
-        url = "https://dement-project-result-app.streamlit.app/app"
+        url = "https://www.youtube.com/watch?v=TsXR7_vtusQ"
         if st.button("Go to Link"):
             webbrowser.open_new_tab(url)
 
