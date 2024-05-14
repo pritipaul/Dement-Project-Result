@@ -113,7 +113,7 @@ def main():
 
         st.success("Health Metrics Details Successfully Submitted!")
         st.write(f'''
-            <a target="_self" href="https://code2project2023.github.io/code2project2023/index.html">
+            <a target="_self" href="https://pritipaul.github.io/Dementia_Webpage/level/indexlevel7.html">
                 <button>
                     Please login via Google
                 </button>
