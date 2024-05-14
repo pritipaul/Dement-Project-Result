@@ -7,6 +7,7 @@ from keras.models import Sequential
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from streamlit_gsheets import GSheetsConnection
 from nav import make_sidebar
+import webbrowser
 
 
 make_sidebar()
@@ -112,6 +113,10 @@ def main():
         conn.update(worksheet="Dementia", data=updated_df)
 
         st.success("Health Metrics Details Successfully Submitted!")
+        url = "https://dement-project-result-app.streamlit.app/app"
+        if st.button("Go to Link"):
+            webbrowser.open_new_tab(url)
+
 
 
 if __name__ == '__main__':
