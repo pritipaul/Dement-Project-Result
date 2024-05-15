@@ -115,7 +115,7 @@ def main():
         st.write(f'''
             <a target="_self" href="https://pritipaul.github.io/Dementia_Webpage/level/indexlevel7.html">
                 <button>
-                    Please login via Google
+                    Proceed To Level-2
                 </button>
             </a>
             ''',
